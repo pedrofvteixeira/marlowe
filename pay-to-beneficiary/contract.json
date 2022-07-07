@@ -1,0 +1,140 @@
+{
+    "when": [
+        {
+            "then": {
+                "when": [
+                    {
+                        "then": {
+                            "token": {
+                                "token_name": "",
+                                "currency_symbol": ""
+                            },
+                            "to": {
+                                "account": {
+                                    "role_token": "Beneficiary"
+                                }
+                            },
+                            "then": {
+                                "token": {
+                                    "token_name": "",
+                                    "currency_symbol": ""
+                                },
+                                "to": {
+                                    "account": {
+                                        "role_token": "Beneficiary"
+                                    }
+                                },
+                                "then": "close",
+                                "pay": 0,
+                                "from_account": {
+                                    "role_token": "Party02"
+                                }
+                            },
+                            "pay": 0,
+                            "from_account": {
+                                "role_token": "Party01"
+                            }
+                        },
+                        "case": {
+                            "party": {
+                                "role_token": "Party02"
+                            },
+                            "of_token": {
+                                "token_name": "",
+                                "currency_symbol": ""
+                            },
+                            "into_account": {
+                                "role_token": "Party02"
+                            },
+                            "deposits": 0
+                        }
+                    }
+                ],
+                "timeout_continuation": "close",
+                "timeout": 1657218485788
+            },
+            "case": {
+                "party": {
+                    "role_token": "Party01"
+                },
+                "of_token": {
+                    "token_name": "",
+                    "currency_symbol": ""
+                },
+                "into_account": {
+                    "role_token": "Party01"
+                },
+                "deposits": 0
+            }
+        },
+        {
+            "then": {
+                "when": [
+                    {
+                        "then": {
+                            "token": {
+                                "token_name": "",
+                                "currency_symbol": ""
+                            },
+                            "to": {
+                                "account": {
+                                    "role_token": "Beneficiary"
+                                }
+                            },
+                            "then": {
+                                "token": {
+                                    "token_name": "",
+                                    "currency_symbol": ""
+                                },
+                                "to": {
+                                    "account": {
+                                        "role_token": "Beneficiary"
+                                    }
+                                },
+                                "then": "close",
+                                "pay": 0,
+                                "from_account": {
+                                    "role_token": "Party01"
+                                }
+                            },
+                            "pay": 0,
+                            "from_account": {
+                                "role_token": "Party02"
+                            }
+                        },
+                        "case": {
+                            "party": {
+                                "role_token": "Party01"
+                            },
+                            "of_token": {
+                                "token_name": "",
+                                "currency_symbol": ""
+                            },
+                            "into_account": {
+                                "role_token": "Party01"
+                            },
+                            "deposits": 0
+                        }
+                    }
+                ],
+                "timeout_continuation": "close",
+                "timeout": 1657218485788
+            },
+            "case": {
+                "party": {
+                    "role_token": "Party02"
+                },
+                "of_token": {
+                    "token_name": "",
+                    "currency_symbol": ""
+                },
+                "into_account": {
+                    "role_token": "Party02"
+                },
+                "deposits": 0
+            }
+        }
+    ],
+    "timeout_continuation": "close",
+    "timeout": 1657218785788
+}
